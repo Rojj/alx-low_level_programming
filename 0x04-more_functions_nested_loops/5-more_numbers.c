@@ -8,16 +8,38 @@
 
 void more_numbers(void)
 {
-	int i, ch;
+	int i;
+	int first_number;
+	int second_number;
+	int result;
 
-	for (i = 0; i < 10; i++)
+	i = 0;
+	result = 0;
+	while (i < 10)
 	{
-		for (ch = 0; ch < 15; ch++)
+		if (result < 10)
 		{
-			if (ch >= 10)
-				_putchar((ch / 10) + 48);
-			_putchar((ch % 10) + 48);
+			while (result  <= 14)
+			{
+				if (result < 10)
+				{
+					second number = result;
+				}
+
+				else
+				{
+					first_number = result / 10;
+					second number = result % 10;
+						_putchar (first_number + '0');
+				}
+
+				_putchar (second_number + '0');
+
+				result++;
+			}
+			i++;
+				result = 0;
+				_putchar ('\n');
 		}
-	}
-		_putchar('\n');
+
 }
